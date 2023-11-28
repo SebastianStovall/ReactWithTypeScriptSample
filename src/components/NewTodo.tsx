@@ -1,6 +1,7 @@
 // this component displays a form for adding new todos, then forwards the newly created todos into App.tsx
 
 import React, { useState } from 'react'
+import './NewTodo.css'
 
 interface NewTodoProps {
     onAddTodo: (data: string) => void  // this interface expexts a key in props called onAddTodo that will be a function that return void

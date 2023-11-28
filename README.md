@@ -8,3 +8,9 @@
 
 * default config is good for most of what you need
 * if you need es6 import/export, make sure 'es6' is enabled under the target key
+
+
+# TypeScript Documentation for React and Redux
+
+* https://react.dev/learn/typescript
+* https://redux.js.org/usage/usage-with-typescript

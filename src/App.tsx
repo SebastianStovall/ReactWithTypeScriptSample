@@ -15,10 +15,16 @@ const App: React.FC = () => {
   ]);
   }
 
+  const todoDeleteHandler = (todoId: string) => {  // delete the todo you target when clicking 'delete' button in TodoList.tsx
+    setTodos((prevTodos) => {
+      return prevTodos.filter(todo => todo.id !== todoId) // return all todos that dont match the todoId your passing in... which gets rid of that todo
+    })
+  }
+
   return (
     <div>
       <NewTodo onAddTodo={todoAddHandler} />
-      <TodoList items={todos} />
+      <TodoList items={todos} onDeleteTodo={todoDeleteHandler} />
     </div>
   );
 }
